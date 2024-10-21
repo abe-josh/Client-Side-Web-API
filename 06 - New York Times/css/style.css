@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 5rem;
+}
+
+.controls {
+    flex: 1;
+}
+
+.results {
+    flex: 2;
+}
+
+
+/* FORM STYLING */
+
+.controls {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+}
+
+.controls label, 
+.controls select, 
+.controls input {
+    display: block;
+}
+
+.controls label {
+    margin-bottom: 5px;
+}
+
+.controls input,
+.controls select {
+    width: 100%;
+    padding: 5px;
+}
+
+.submit {
+    width: 100%;
+    margin: 1em 0;
+    padding: 5px 0;
+}
+
+/* RESULTS/SECTION STYLING */
+
+.pagination {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15em;
+    margin-bottom: 1em;
+    /* border: 1px solid black; */
+}
+
+.results nav button,
+.results nav p {
+    text-align: center;
+    flex: 1;
+}
+
+.results article {
+    background-color: #ddd;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    /* position: relative; */
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+article p.keywords {
+    font-size: 14px;
+    line-height: 2;
+}
+
+img {
+    float: right;
+    margin-left: 20px;
+    max-width: 200px;
+}
+
+article span {
+    background-color: #ccc;
+    padding: 3px;
+    margin: 5px;
+    border-radius: 2px;
+}

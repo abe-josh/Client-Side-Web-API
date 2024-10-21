@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Video and Audio API </title>
+
+
+    <!-- <script src="./js/script.js" defer></script> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <h1>Video and Audio API</h1>
+
+    <div class="player">
+        <video controls>
+            <source src="./videos/sintel-short.mp4" type="video/mp4">
+            <source src="./videos/sintel-short.webm" type="video/webm">
+        </video>
+
+        <div class="controls">
+            <button class="play" data-icon="P" aria-label="play pause toggle"></button>
+            <button class="stop" data-icon="S" aria-label="stop"></button>
+
+            <div class="timer">
+                <div></div>
+                <span aria-label="timer">00:00</span>
+            </div>
+
+            <button class="rwd" data-icon="B" aria-label="rewind"></button>
+            <button class="fwd" data-icon="F" aria-label="fast forward"></button>
+        </div>
+    </div>
+    <p>Sintel &copy; copyright Blender Foundation | <a href="https://studio.blender.org/films/sintel/">studio.blender.org/films/sintel</a>.</p>
+    
+    <script src="./js/script.js">
+
+    </script>
+</body>
+</html>

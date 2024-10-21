@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1em;
+}
+
+.controls {
+    flex: 1;
+}
+
+.results {
+    flex: 3;
+}
+
+/* CONTROLS STYLING */
+.controls {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.controls label,
+.controls input,
+.controls button {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}  
+
+.controls input,
+.controls button {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* SECTION STYLING */
+
+.results section {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+section * {
+    /* min-width: 200px; */
+    height: auto;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 10px;
+}
